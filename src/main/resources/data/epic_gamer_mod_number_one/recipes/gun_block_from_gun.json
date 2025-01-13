@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "epic_gamer_mod_number_one:gun"
+    }
+  },
+  "result": {
+    "id": "epic_gamer_mod_number_one:gun_block",
+    "count": 1
+  }
+}

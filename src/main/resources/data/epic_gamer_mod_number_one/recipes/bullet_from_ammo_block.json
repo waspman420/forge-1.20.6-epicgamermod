@@ -4,11 +4,11 @@
   "ingredients":
           [
             {
-              "item": "epic_gamer_mod_number_one:gun_block"
+              "item": "epic_gamer_mod_number_one:ammo_block"
             }
           ],
   "result": {
-    "id": "epic_gamer_mod_number_one:gun",
+    "id": "epic_gamer_mod_number_one:bullet",
     "count": 9
   }
 }

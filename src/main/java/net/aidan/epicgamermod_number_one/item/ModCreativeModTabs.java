@@ -1,6 +1,7 @@
 package net.aidan.epicgamermod_number_one.item;
 
 import net.aidan.epicgamermod_number_one.EpicGamerMod;
+import net.aidan.epicgamermod_number_one.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,6 +23,8 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.GUN.get());
                         output.accept(ModItems.BULLET.get());
+                        output.accept(ModBlocks.AMMO_BLOCK.get());
+                        output.accept(ModBlocks.GUN_BLOCK.get());
 
                     })
                     .build());

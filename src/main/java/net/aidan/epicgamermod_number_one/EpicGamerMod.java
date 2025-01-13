@@ -1,6 +1,7 @@
 package net.aidan.epicgamermod_number_one;
 
 import com.mojang.logging.LogUtils;
+import net.aidan.epicgamermod_number_one.block.ModBlocks;
 import net.aidan.epicgamermod_number_one.item.ModCreativeModTabs;
 import net.aidan.epicgamermod_number_one.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -33,7 +34,9 @@ public class EpicGamerMod {
     public EpicGamerMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);

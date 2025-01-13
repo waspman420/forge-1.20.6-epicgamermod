@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "epic_gamer_mod_number_one:block/bullet_casing_ore"
+  }
+}

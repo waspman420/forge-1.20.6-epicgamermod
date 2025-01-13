@@ -1,9 +1,12 @@
 {
   "item.epic_gamer_mod_number_one.gun": "Gun",
   "item.epic_gamer_mod_number_one.bullet": "Bullet",
+  "item.epic_gamer_mod_number_one.bullet_casing": "Bullet Casing",
 
   "block.epic_gamer_mod_number_one.ammo_block": "Block of Bullets",
   "block.epic_gamer_mod_number_one.gun_block": "Gun Block",
+
+  "block.epic_gamer_mod_number_one.bullet_casing_ore": "Bullet Casing Ore",
 
   "creativetab.guns": "Epic Gamer Mod"
 }

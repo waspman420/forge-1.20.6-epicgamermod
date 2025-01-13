@@ -2,10 +2,12 @@ package net.aidan.epicgamermod_number_one.block;
 
 import net.aidan.epicgamermod_number_one.EpicGamerMod;
 import net.aidan.epicgamermod_number_one.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,6 +34,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> GUN_BLOCK = registerBlock("gun_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COAL_BLOCK).sound(SoundType.CHAIN)));
 
+    public static final RegistryObject<Block> BULLET_CASING_ORE = registerBlock("bullet_casing_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3,6),BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(2).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
 

@@ -17,6 +17,9 @@ public class ModItems {
     public static final RegistryObject<Item> BULLET = ITEMS.register("bullet",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> BULLET_CASING = ITEMS.register("bullet_casing",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
 

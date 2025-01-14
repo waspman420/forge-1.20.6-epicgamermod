@@ -27,6 +27,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.GUN_BLOCK.get());
                         output.accept(ModItems.BULLET_CASING.get());
 
+                        output.accept(ModItems.METAL_DETECTOR.get());
+
                         output.accept(ModBlocks.BULLET_CASING_ORE.get());
 
                     })

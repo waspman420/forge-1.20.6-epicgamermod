@@ -1,6 +1,7 @@
 package net.aidan.epicgamermod_number_one.item;
 
 import net.aidan.epicgamermod_number_one.EpicGamerMod;
+import net.aidan.epicgamermod_number_one.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +20,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> BULLET_CASING = ITEMS.register("bullet_casing",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
